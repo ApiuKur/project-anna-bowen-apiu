@@ -18,6 +18,8 @@ The classic game of Tic-Tac-Toe, played by two users on the same device. They wi
 ### Interest:
 
 We thought it would be interesting to figure out how to implement the logic in a way that would help us make the ultimate game. We also thought that it would be fun to play with your friends.
+
 ### Minimum viable product:
+
 This would be the most basic version of Tic-Tac-Toe, with only a 3-by-3 grid.
 The other students that we talked to thought we had a good idea told us to be careful in how we implement the base game, so that it can be easily translated to the ultimate game.
