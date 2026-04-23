@@ -5,14 +5,13 @@ import edu.macalester.graphics.CanvasWindow;
 import edu.macalester.graphics.GraphicsGroup;
 import edu.macalester.graphics.GraphicsObject;
 import edu.macalester.graphics.Image;
+import edu.macalester.graphics.ui.Button;
 
 public class TicTacToeGame {
     private static final int CANVAS_WIDTH = 600;
     private static final int CANVAS_HEIGHT = 800;
     private Set<GraphicsObject>filledCells=new HashSet<>();
-
-
-
+    private Button restartButton;
     private int gameCount;
     private int symbolCount;
 
@@ -22,6 +21,9 @@ public class TicTacToeGame {
     public TicTacToeGame() {
         gameCount = 0;
         canvas = new CanvasWindow("Tic-Tac-Toe!", CANVAS_WIDTH, CANVAS_HEIGHT);
+        restartButton=new Button("Play again");
+        restartButton.setPosition(200.0,700.0);
+        canvas.add(restartButton);
         newGame();
     }
     
