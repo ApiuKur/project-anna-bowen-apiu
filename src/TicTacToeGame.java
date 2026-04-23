@@ -41,7 +41,9 @@ public class TicTacToeGame {
 
             GraphicsObject clicked = grid.getElementAtLocalCoordinates(x, y);
              if(clicked!=null && !filledCells.contains(clicked)){
-               filledCells.add(clicked);
+               filledCells.add(clicked);            
+        
+
             
             if (clicked != null) {
                 String imageFile;
