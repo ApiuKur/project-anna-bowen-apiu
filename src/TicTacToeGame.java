@@ -14,6 +14,7 @@ public class TicTacToeGame {
     private Button restartButton;
     private int gameCount;
     private int symbolCount;
+    private int symbo;
 
     private CanvasWindow canvas;
     private Grid grid;
@@ -24,12 +25,16 @@ public class TicTacToeGame {
         restartButton=new Button("Play again");
         restartButton.setPosition(200.0,700.0);
         canvas.add(restartButton);
+        restartButton.onClick(()->{
+            newGame();
+        });
       
         newGame();
     }
     
     private void newGame() {
         gameCount++;
+        canvas.removeAll();
         grid = new Grid();
         canvas.add(grid);
         addSymbol();
